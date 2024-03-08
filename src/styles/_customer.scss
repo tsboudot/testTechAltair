@@ -1,0 +1,30 @@
+@import './variables';
+
+.customer-infos {
+    border: 5px solid $border-color;
+    border-radius: 20px;
+    background-color: ivory;
+    margin: 10px;
+    padding: 10px;
+    width: 400px;
+    height: 700px;
+
+    &:hover {
+        background-color: #EBC49F;
+    }
+}
+
+.serviceContainer {
+    ul {
+        list-style-type: none; // Supprime les puces de la liste
+        padding: 0;
+        margin: 0;
+        display: flex; // Utilise la flexbox pour disposer les éléments horizontalement
+        flex-wrap: wrap; // Permet aux éléments de passer à la ligne si nécessaire
+    }
+
+    li {
+        margin-right: 20px; // Marge entre les éléments de liste
+        margin-bottom: 10px; // Marge en bas pour espacement vertical
+    }
+}

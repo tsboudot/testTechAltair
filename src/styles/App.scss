@@ -1,0 +1,44 @@
+// App.scss
+
+@import './variables';
+@import './_customer';
+@import './navBar';
+
+body {
+    font-family: Arial, sans-serif;
+    font-size: $font-size;
+    background-color: $background-color;
+    padding: 10px;
+
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    color: $primary-color;
+    align-self: auto;
+    margin-left: 25%;
+}
+
+.button {
+    background-color: $primary-color;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+
+    &:hover {
+        background-color: darken($primary-color, 10%);
+    }
+}
+
+.customerContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
